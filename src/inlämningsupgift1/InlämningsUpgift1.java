@@ -28,7 +28,7 @@ public class InlämningsUpgift1 {
             do
             {
                 ListaDjur = ""; // ser till att strängen som innehåller alla djur och deras foder nollställs
-                s = JOptionPane.showInputDialog("Djursjukhuset har totalt " + DR.getAntalDjur() + " antal djur\n"
+                s = JOptionPane.showInputDialog("Djurhotellet har totalt " + DR.getAntalDjur() + " antal djur\n"
                                                 + "Vilket djur ska få mat?\n"
                                                 + "Skriv Namnet på djur typen för att visa alla av den typen.\n"
                                                 + "Skriv \"alla\" för att visa alla djur");
