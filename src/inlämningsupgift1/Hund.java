@@ -11,7 +11,7 @@ public class Hund extends Djur implements IHämtaDjur{
 	{
 		JOptionPane.showMessageDialog(null, "Hunden " + Namn + " ska ha " + Foder + " gram hundfoder" );
 	}
-	public String MataText() 
+	public String MataText()
 	{
 		return "Hunden " + Namn + " ska ha " + Foder + " gram hundfoder" ;
 	}

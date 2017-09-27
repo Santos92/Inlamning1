@@ -11,7 +11,7 @@ public class DjurRegister {
 	Gris Gris1 = new Gris("Babe" , 100);
 	public List<Djur> getDjur()
 	{
-		List<Djur> djur = new ArrayList<>();
+		List<Djur> djur = new ArrayList<>(); // sätter up en lista baserad på Superklassen "Djur"
 		djur.add(Hund1);
 		djur.add(Hund2);
 		djur.add(Katt1);
@@ -21,7 +21,7 @@ public class DjurRegister {
 		djur.add(Gris1);
 		return djur;
 	}
-	public List<IHämtaDjur> getDjurTyp()
+	public List<IHämtaDjur> getDjurTyp() // sätter upp en lista baserad på ett interface
 	{
 		List<IHämtaDjur> djur = new ArrayList<IHämtaDjur>();
 		djur.add(Hund1);
@@ -33,4 +33,8 @@ public class DjurRegister {
 		djur.add(Gris1);
 		return djur;
 	}
+        public int getAntalDjur()
+        {
+            return Djur.Antal;
+        }
 }

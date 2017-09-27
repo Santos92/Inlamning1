@@ -23,12 +23,13 @@ public class InlämningsUpgift1 {
             String s;
             String ListaDjur = "";
             DjurRegister DR = new DjurRegister();
-            List<Djur> djur = DR.getDjur();
-            List<IHämtaDjur> djurTyp = DR.getDjurTyp();	
+            List<Djur> djur = DR.getDjur(); // Hämtar en lista på djur utifrån Superklassen "Djur"
+            List<IHämtaDjur> djurTyp = DR.getDjurTyp();// Hämtar en lista på djur utifrån Interfacet "IHämtaDjur"
             do
             {
                 ListaDjur = ""; // ser till att strängen som innehåller alla djur och deras foder nollställs
-                s = JOptionPane.showInputDialog("Vilket djur ska få mat?\n"
+                s = JOptionPane.showInputDialog("Djursjukhuset har totalt " + DR.getAntalDjur() + " antal djur\n"
+                                                + "Vilket djur ska få mat?\n"
                                                 + "Skriv Namnet på djur typen för att visa alla av den typen.\n"
                                                 + "Skriv \"alla\" för att visa alla djur");
                 if (checkDjurTyp(djurTyp, s)  || "alla".equalsIgnoreCase(s))// kollar om man skrivit en djur typ eller "alla"
