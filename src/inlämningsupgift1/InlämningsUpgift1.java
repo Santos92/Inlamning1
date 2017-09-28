@@ -46,7 +46,7 @@ public class InlämningsUpgift1 {
                         if (x.getName().equalsIgnoreCase(s)) // hämtar metoden Mata från djuret med namnet man skrivit in
                             x.Mata();/* med hjälp av denna metod använder jag mig utav polymorfism
                                        då jag anropar samma metod namn men får olika värden
-                                       beroende på vilken subklass som anropas i super klassen Djur.*/
+                                       beroende på vilken subklass som anropas i super klassen Djur.*/ 
         } while(s != null);// loopar tills man clickar avbryt eller X
     }
 }
